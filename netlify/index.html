@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOCART - Online Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0c49ba;
+        }
+
+        .logo img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 300px;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar input[type="text"]:focus {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-bar button:hover {
+            background-color: #038f58;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #0c49ba;
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+
+        ul li a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li a:hover {
+            background-color: #04AA6D;
+            border-radius: 10px;
+        }
+
+        .banner {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .banner img:hover {
+            transform: scale(1.05);
+        }
+
+        .category-grid, .deal-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .category, .deal-item {
+            flex: 1;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            transition: box-shadow 0.3s ease;
+            background-color: white;
+        }
+
+        .category img, .deal-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .category:hover, .deal-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #0c49ba;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        footer .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        footer .newsletter {
+            margin-top: 20px;
+        }
+
+        footer input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            width: 300px;
+        }
+
+        footer button {
+            padding: 10px 20px;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="C:\Users\thami\OneDrive\Desktop\netlify\Picsart_24-08-30_20-15-49-073.png" alt="innocart">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands and more">
+                <button>Search</button>
+            </div>
+            <div class="nav-links">
+                <a href="#">Login</a>
+                <a href="#">Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="C:\Users\thami\OneDrive\Desktop\netlify\IMG_20240830_204314.jpg" alt="Promo Banner">
+    </section>
+
+    <ul>
+        <li><a href="#">Mobile</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Grocery</a></li>
+        <li><a href="#">Toys</a></li>
+    </ul>
+
+    <section class="categories">
+        <h2>Top Categories</h2>
+        <div class="category-grid">
+            <div class="category">
+                <img src="C:\Users\thami\OneDrive\Desktop\netlify\tv.jpg" alt="Electronics">
+                <h3>Electronics</h3>
+            </div>
+            <div class="category">
+                <img src="C:\Users\thami\OneDrive\Desktop\netlify\fashion.jpg" alt="Fashion">
+                <h3>Fashion</h3>
+            </div>
+            <div class="category">
+                <img src="C:\Users\thami\OneDrive\Desktop\netlify\bed.jpg" alt="Home & Furniture">
+                <h3>Home & Furniture</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="deals">
+        <h2>Best Deals</h2>
+        <div class="deal-grid">
+            <div class="deal-item">
+                <img src="C:\Users\thami\OneDrive\Desktop\netlify\iphone.jpg" alt="Deal Item 1">
+                <h4>iPhones</h4>
+                <p>Up to 30% off</p>
+            </div>
+            <div class="deal-item">
+                <img src="C:\Users\thami\OneDrive\Desktop\netlify\air cooler.jpg" alt="Deal Item 2">
+                <h4>Appliances</h4>
+                <p>Up to 40% off</p>
+            </div>
+            <div class="deal-item">
+                <img src="C:\Users\thami\OneDrive\Desktop\netlify\shoe.jpg" alt="Deal Item 3">
+                <h4>Fashion</h4>
+                <p>Flat 50% off</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+        <p>&copy; 2024 INNOCART. All rights reserved. | Contact us at info@innocart.com</p>
+    </footer>
+
+</body>
+
+</html>

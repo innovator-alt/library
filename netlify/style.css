@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2874f0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ddd;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #ff9f00;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    margin: 2rem 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.categories {
+    padding: 2rem;
+    text-align: center;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.category img {
+    width: 300px;
+    height: 100px;
+}
+
+.category h3 {
+    margin-top: 0.5rem;
+}
+
+.deals  {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 300px;
+    color: black;
+}
+
+.deal-grid {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 0;
+    color:#ff9f00
+}
+
+.deal-item img {
+    width: 150px;
+    height: 150px;
+}
+
+.deal-item h4 {
+    margin-top: 1rem;
+    margin-bottom: 50px;
+}
+
+.deal-item p {
+    margin-top: 0.5rem;
+    color: green;
+
+}
+.footer h3{
+    background-color: #2874f0;    
+}
